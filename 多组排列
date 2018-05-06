@@ -1,0 +1,6 @@
+#两组对手pk ，1队有abc 3人，2队有xyz 3人，其中a不和x打，c不和x,z打，其中三组是哪几个在比？
+for a in ['x','y','z']:
+    for b in ['x', 'y', 'z']:
+        for c in ['x', 'y', 'z']:
+            if(a!=b)and(b!=c)and(c!=a) and (a!='x') and (c!='x') and (c!='z'):
+                print ('a和%s比赛，b和%s比赛，c和%s比赛' %(a,b,c))
